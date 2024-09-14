@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Human Resources</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        p {
+            font-size: 20px;
+        }
+        li {
+            font-size: 20px;
+        }
+        a {
+            font-size: 16px;
+        }
+        .a2 {
+            font-size: 20px;
+        }
+        hr {
+           height: 1px;
+           background-color: #424242;
+           border: none;
+        }
+        .container {
+            flex: 1;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .tabs button {
+            background-color: #2e2e2e;
+            border: none;
+            padding: 14px 20px;
+            color: #f0f0f0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tabs button:hover {
+            background-color: #1e1e1e;
+        }
+        .tabs button.active {
+            background-color: #4e4e4e;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #272727;
+        }
+        a {
+            color: #84bdf1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #46a7ff;
+        }
+        .footer-container {
+            background-color: #161616;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 0px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .footer-upper {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .footer {
+            margin: 0; /* Remove top margin */
+            padding-top: 0px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer a {
+            padding: 10px 20px;
+            background-color: #2e2e2e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer a:hover {
+            background-color: #1e1e1e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            Once Human Resources
+        </h1>
+
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'home')">Home</button>
+            <button class="tab-link" onclick="openTab(event, 'useful-links')">Useful Links</button>
+            <button class="tab-link" onclick="openTab(event, 'videos')">Videos</button>
+            <button class="tab-link" onclick="openTab(event, 'wish-machine')">Wish Machine</button>
+            <button class="tab-link" onclick="openTab(event, 'fishing')">Fishing</button>
+            <button class="tab-link" onclick="openTab(event, 'server-transfer')">Server Transfer Checklist</button>
+            <!--
+            <button class="tab-link" onclick="openTab(event, 'tabID')">TabName</button>
+            -->
+        </div>
+
+        <div id="home" class="tab-content active">
+            <h2>Hello!</h2>
+            <p>This is a collection of helpful spreadsheets, guides, and videos for Once Human.</p>
+            <p><b><u>My Servers:</u></b><br>PVP01-X0006 (Hard) <br>PVE01-X0050 (Hard)</p>
+            <p><b><u>Friend Code:</u></b><br>yq150711597 (3-star AWS Bullseye)</p>
+        </div>
+        <!--
+        <div id="template" class="tab-content">
+            <h2>Template</h2>
+            <p>This is a Template.</p>
+        </div>
+        -->
+        <div id="useful-links" class="tab-content">
+            <h2>Useful Links</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Mods
+                        </td>
+                        <td>
+                           <a href="https://docs.google.com/spreadsheets/d/1bLqxzNMyZ9rQe3GbzFQ9nlqH9H_98zOCecPe7iV_0YU/htmlview?gid=681141729" target="_blank">Doomeris Mod Sheet</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Calibrations
+                        </td>
+                        <td>
+                            <a href="https://gamingwithdaopa.ellatha.com/once-human/calibration-list/"target="_blank">Calibration List</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Deviations
+                        </td>
+                        <td>
+                            <a href="https://docs.google.com/spreadsheets/d/1mQlrWmF_7BOgsS6gW55Xg9wmA_Lem-7gtKuieOM9q18/edit?gid=0#gid=0"target="_blank">Glitchiz Ultimate Deviation Checklist</a><br>
+                            <a href="https://docs.google.com/spreadsheets/u/0/d/1MBm8xUK4HPhmjSG54MKP5YBqtezaXbPSAxGpYcPBZRo/htmlview"target="_blank">Once Human Deviations</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Transfer Item Point Costs
+                        </td>
+                        <td>
+                            <a href="https://docs.google.com/spreadsheets/d/1n4p6hm4cQBt-p38SOSbwpQAHQFZMsH0m13cqkj2_frw/edit?gid=2083637717#gid=2083637717"target="_blank">Transfer Item Point Costs List 1</a><br>
+                            <a href="https://docs.google.com/spreadsheets/d/1yK-O5jE2yY4hyQ-mpt2YeY2D50_g5AVhyfDi3eJFevU/htmlview"target="_blank">Transfer Item Point Costs List 2</a><br>
+                            <a href="https://docs.google.com/spreadsheets/d/1zxtdOGxLYvmfRmfxD7qfdOWJeWb28bCVtL88vtv0D2U/edit?gid=451204873#gid=451204873"target="_blank">Transfer Item Point Costs List 3</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Damage Calculation
+                        </td>
+                        <td>
+                            <a href="https://imgur.com/a/basic-damage-calculation-once-human-K5dd5dk">Basic Damage Calculation Guide</a><br>
+                            <a href="https://docs.google.com/spreadsheets/d/1Y6XlZsh6Mhvlzxs3ICizaebc6tyiu9MN67igPZAldsw/edit?gid=22263148#gid=22263148"target="_blank">Burn Damage Formula - Lanasayo</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Damage Reduction Calculation
+                        </td>
+                        <td>
+                            <a href="https://docs.google.com/spreadsheets/d/1ZSyv4_7lzEUyIZq7H1Xy2G7R4u1ogsppL1WRFVPyWmc/edit?gid=1509428662#gid=1509428662"target="_blank">Doomeris Damage Reduction Calculation</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Specializations
+                        </td>
+                        <td>
+                            <a href="https://docs.google.com/spreadsheets/d/13DjEVhh0R2M22_hcy8jYr1TDj5eLeICUlQ1AxpKuBGg/edit?pli=1&gid=1413976914#gid=1413976914"target="_blank">Specialization List 1</a><br>
+                            <a href="https://docs.google.com/spreadsheets/d/13DjEVhh0R2M22_hcy8jYr1TDj5eLeICUlQ1AxpKuBGg/edit?pli=1&gid=1413976914#gid=1413976914"target="_blank">Specialization List 2</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Interactive Maps
+                        </td>
+                        <td>
+                            <a href="https://mapgenie.io/once-human/maps/nalcott"target="_blank">Map Genie</a><br>
+                            <a href="https://gamevlg.com/oncehuman/maps/nalcott"target="_blank">Game Village</a><br>
+                            <a href="https://www.th.gl/apps/Once%20Human"target="_blank">Overlay App</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Weapon Tierlist
+                        </td>
+                        <td>
+                            <a href="https://docs.google.com/spreadsheets/d/1xgM-_PbOaEBeZkSTz4IgW_clId0DSthvulUnCO2Xn6I/edit?gid=137945428#gid=137945428"target="_blank">Doomeris Weapon Tierlist</a><br>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>
+                            Template
+                        </td>
+                        <td>
+                            <a href="link"target="_blank">Template</a><br>
+                        </td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="videos" class="tab-content">
+            <h2>Videos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Farms
+                        </td>
+                        <td>
+                           <a href="https://www.youtube.com/watch?v=VH1xfdGEr2w" target="_blank">Passive Acid Farm Guide ♻ | 1152 Acid per Day</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Astral Sand
+                        </td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=otSDSzrYr7Q"target="_blank">Get LOTS of Astral Sand</a><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="wish-machine" class="tab-content">
+            <h2>
+                Wish Machine
+            </h2>
+            <p>
+                A lot of times people think that the gambling option in the wish machine is always a scam.<br><br>
+                <b>This is not true!</b><br><br>
+                If you are about to buy a blueprint from the BUY menu, BEFORE you do that, make sure to check the games to see if it is in one of the games! If it is, keep playing the game until you get the blueprint as it only costs 10k starchrom to finish the game (500 per roll), and you usually get your blueprint before 20 rolls.<br><br>
+                For example, the AWS Bingo/Bullseye costs 8k starchrom. However, in one of the games you can roll for it. AND ON TOP OF THAT, you get the WILDFIRE BP too! so EVEN IF it takes you all 20 rolls, it costs 10k starchrom to get those blueprints from the shop anyway. But on top of the AWS and Wildfire blueprints you get from the wish, you get a bunch of other random blueprint frags which are used to enhance other blueprints.<br><br>
+                It doesn't end there! Even if you bought the blueprint from the shop menu, you can still play the game and get frags for the same blueprint and enhance it a lot! I did this after buying the AWS Bingo/Bullseye, and got it to 3 stars!<br><br>
+                - FlameBeast25
+            </p>
+        </div>
+
+        <div id="fishing" class="tab-content">
+            <h2>
+                Fishing
+            </h2>
+            <ul>
+                <li>
+                    Use crankbait in sea water for easy northern pike.
+                </li>
+            </ul>
+        </div>
+
+        <div id="server-transfer" class="tab-content">
+            <h2>Server Transfer Checklist</h2>
+            <ul>
+                <li>
+                    Make advanced electric rock drill & advanced logging chainsaw.
+                </li>
+                <li>
+                    Materials for normal furnaces to salt farm for XP.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-upper">
+            <p>
+                Created by
+                <a class="a2" href="https://flamebeast25.github.io/" target="_blank">
+                    FlameBeast25
+                </a>
+            </p>
+        </div>
+        <div class="footer">
+            <a href="https://youtube.com/flamebeast25" target="_blank">YouTube</a>
+            <a href="https://twitch.tv/flamebeast_25" target="_blank">Twitch</a>
+            <a href="#" target="_blank">Discord</a>
+        </div>
+    </div>
+
+    
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+</html>
