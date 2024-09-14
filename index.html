@@ -16,6 +16,7 @@
             flex-direction: column;
             min-height: 100vh;
             overflow-x: hidden;
+            overflow-y: scroll; /* Forces scrollbar even if the content doesn't exceed the viewport height */
         }
         p {
             font-size: 20px;
@@ -30,6 +31,9 @@
         }
         a {
             font-size: 16px;
+            color: #84bdf1;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
         .a2 {
             font-size: 20px;
@@ -90,10 +94,13 @@
         th {
             background-color: #272727;
         }
-        a {
-            color: #84bdf1;
-            text-decoration: none;
-            transition: color 0.3s ease;
+        /* Set consistent column widths for both tables */
+        table th:nth-child(1), table td:nth-child(1) {
+            width: 25%; /* Adjust percentage as needed */
+        }
+
+        table th:nth-child(2), table td:nth-child(2) {
+            width: 75%; /* Adjust percentage as needed */
         }
         a:hover {
             color: #46a7ff;
@@ -134,7 +141,6 @@
         .footer a:hover {
             background-color: #1e1e1e;
         }
-
     </style>
 </head>
 <body>
